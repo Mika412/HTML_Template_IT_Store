@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lab2">
+    <meta name="author" content="Mykhaylo Marfeychuk">
+
+    <title>Main Page</title>
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+   <!-- BEGIN NAV -->
+
+   
+   <nav class="navbar navbar-toggleable-md navbar-inverse">
+    <ul class="navbar-nav mr-auto">
+        <li><a class="nav-link active" href="{url1}">{MENU_1}</a></li>
+    </ul>
+    <ul class="form-inline my-lg-0">
+        <a class="nav-link" href="{url_cart}">{CART}</a>
+        <a class="nav-link" href="{url2}">{MENU_2}</a>
+        <a class="nav-link" href="{url3}">{MENU_3}</a>
+        <a class="nav-link" href="{url4}">{WELCOME}</a>
+    </ul>
+  </nav>
+<!-- END NAV -->
+
+
+<!-- BEGIN MESSAGE -->
+<div class="col-xs-12"  >	
+  <h2 style="text-align:center;">{MESSAGE}</h2>
+</div>	
+
+<!-- END MESSAGE -->
+
+
+<!-- BEGIN CART -->
+<div class="col-xs-12">
+    <div class="row">
+      <div class="container cart">
+        <div class="panel panel-info">
+          <div class="panel-body cart">
+  
+          <!-- BEGIN ITEM -->
+          <div class="row">
+            <div class="col-2">
+              <img class="img-responsive cart" src="{IMAGE}">
+            </div>
+            <div class="col-6">
+              <h3 class="product-name"><strong>{NAME}</strong></h3>
+            </div>
+            <div class="col">
+              <h4><strong>{PRICE} € <span class="text-muted">x</span></strong></h4>
+            </div>
+            <div class="col">
+              <h4>{QUANTITY}</h4>
+            </div>
+            <div class="col">
+              <a type="button" class="icon-trash" href="utils/deleteFromCart.php?pid={ITEM_ID}">
+              </a>
+            </div>
+          </div>
+          
+
+        <!-- END ITEM -->
+          <hr>
+  
+          <!-- BEGIN TOTAL -->
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-9">
+              <h4 class="text-right">Total <strong>{TOTAL} €</strong></h4>
+            </div>
+            <div class="col-3 float-right">
+              <a href="{CREATE_ORDER}" class="btn btn-success" type="button" >
+                Checkout
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- END TOTAL -->
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- END CART -->
+  <footer class="footer">
+    <div class="container-fluid footer">
+      <p class="float-left"> &#169; 2017 Desenvolvimento de Aplica&#231;&#245;es Web </p>
+      <p class="float-right"> Designed by <a href="#"> Mykhaylo Marfeychuk</a></p>
+    </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  padding-right: 20px; 
+  padding-left: 20px;
+}
+
+.navbar {
+  background-color: #008CFF;
+}
+
+/* change the link color */
+.navbar .nav-link {
+  color: rgb(255, 255, 255);
+}
+.card{
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-header {
+  background-color: #008CFF;
+  color: white;
+}
+
+
+.container-fluid.red{
+  width: 100%;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+}
+.container-fluid.footer{
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.col-md-offset-10 p a{
+  color: inherit;
+}
+.form-signin.log {
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.form-signin.sign {
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.btn-primary.orange {
+  color: #fff;
+  background-color: #FFA600;
+  margin-top: 20px;
+}
+
+.btn-primary.red {
+  color: #fff;
+  background-color: red;
+  margin-top: 20px;
+}
+
+.btn-primary.blue {
+  color: #fff;
+  background-color: #008CFF;
+  margin-top: 20px;
+}
+
+.btn-primary.btn-block.cancel {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}
+.red {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+.message {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  background-color: rgb(255, 255, 0);
+  border-color: rgb(255, 255, 0);
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+.col-xs-12 {
+  padding-left: 1px;
+  padding-right: 1px;
+
+}
+.col-sm-3{
+  width: inherit;
+}
+
+.panel-body{
+  padding: 10px;
+  padding-top: 1px;
+}
+
+.panel-title{
+  padding: 5px;
+  margin-top: 30px;
+  color:white;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+}
+
+.container.cart{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-body.cart{
+  padding-top: 15px;
+}
+
+.img-responsive.cart {
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-xs-6.cart, .col-xs-4.cart{
+
+  height: auto;
+}
