@@ -106,24 +106,24 @@ if($db) {
 
   if(!($resultProducts = @ mysql_query($queryAllProducts,$db )))
     showerror();
-  
-  
+
+  $elements_per_row = 3; //should be done programmatically
   $nrows  = mysql_num_rows($resultProducts);
     for($i=0; $i<$nrows; $i++) {
       $tuple = mysql_fetch_array($resultProducts,MYSQL_ASSOC);
       $template->setCurrentBlock("PRODUCT");
-      if($i % 3 == 0){
+      if($i % $elements_per_row == 0){
         $template->setVariable('BLOCK1', "<div class=\"card-deck\">");
-      }
-      if(($i+1)%3 == 0){
-        $template->setVariable('BLOCK2', "</div>");
       }
       $template->setVariable('ACTION_PRODUCT_ADD', "utils/addToCart.php");
       $template->setVariable('PRODUCT_ID', $tuple['id']);
       $template->setVariable('IMAGE_URL', $tuple['image']);
       $template->setVariable('CARD_TITLE', $tuple['name']);
       $template->setVariable('PRICE', $tuple['price']);
-    
+
+      if(($i+1) % $elements_per_row == 0 || ($i+1) == $nrows){
+        $template->setVariable('BLOCK2', "</div>");
+      }
       $template->parseCurrentBlock();
 
     } 
